@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+  }
+
+/* background */
+.skeleton, footer, .bloc-voyage {
+  background-color:  rgb(6, 158, 145);
+}
+
+body, .active, .btn:hover, .bloc-etape {
+  background-color:  rgba(154, 247, 247, 0.979) 
+}
+
+.img-index {
+  /* width: 90%; */
+  height: 340px;
+  padding-top:10px;
+}
+
+.bloc-etape {
+  background-color:  rgba(154, 247, 247, 0.979);
+  border: solid;
+  border-color:  rgb(6, 158, 145);
+  border-radius: 10%;
+  padding-bottom: 15px;
+}
+
+.bloc-visite {
+  background-color:  rgba(253, 253, 253, 0.979);
+
+}
+
+/* Font size */
+* {color:black}
+
+/* Font size */
+h1 {font-size: 30px;}
+h2 {font-size: 20px;}
+h3 {font-size: 18px;}
+h4, p {font-size: 16px;}
+h5, li, a {font-size: 14px;}
+
+.container {
+  display: flex;
+  justify-content: center;
+}

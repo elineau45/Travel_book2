@@ -1,0 +1,35 @@
+{% extends 'main_app/base.html' %}
+
+{% load static %}
+{% block content %}
+
+<section>
+    <h2 class="text-center p-3 txt">Qui suis-je?</h2>
+    <div class="container">
+        <div class="card col-lg-12 my-3 shadow p-3 rounded">
+            <div class="row">
+                <!-- <div class="col-md-6 mt-1">
+                    <img src="{% static 'main_app/img/devanture_bec.jpg'%}" class="w-100 imgMenu rounded">
+                </div>
+                <div class="col-md-6 mt-1">
+                    <img src="{% static 'main_app/img/devanture_bec_nuit.jpg'%}" class="w-100 imgMenu rounded">
+                </div> -->
+                <div class="col-md-8 offset-md-2 px-3">
+                    <div class="card-block px-2">
+                        <h4 class="card-title text-center mt-2">Présentation</h4>
+                        <P class="card-text text-justify mt-4 my-4 mx-2 p-2">
+                            Je m'appelle Sylvain, je ne suis pas un grand voyageur!
+                            Cependant, j'aime les paysages qui m'entourent et ce site vous présente ceux que j'ai eu
+                            l'occasion de voir!
+                        </P>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{% endblock %}

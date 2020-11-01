@@ -1,0 +1,31 @@
+{% extends 'main_app/base.html' %}
+
+{% load static %}
+{% block content %}
+
+<section>
+    <h2 class="text-center p-3 txt">Nice</h2>
+    <hr class="style-eight mb-5">
+    <div class="container">
+        <div class="card my-3 shadow p-3 rounded">
+            <div class="row">
+                <div class="col-lg-3 col-md-12">
+                    <img src="{% static 'main_app/img/nice.jpg'%}" class="w-100 imgMenu rounded">
+                </div>
+
+                <div class="col-lg-9 col-md-12 px-3">
+                    <div class="card-block px-3 textBlock">
+                        <h4 class="card-title text-center mt-2">Nice WIKI</h4>
+                        <p class="card-text text-justify mt-5 my-4 mx-3 p-2 "></p>
+                        <p class="card-text text-justify mt-4 my-4 mx-3 p-2 "></p>
+                        </p>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

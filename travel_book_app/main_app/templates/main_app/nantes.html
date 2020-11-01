@@ -1,0 +1,68 @@
+{% extends 'main_app/base.html' %}
+
+{% load static %}
+{% block content %}
+
+<section>
+    <h2 class="text-center p-3 txt">Nantes</h2>
+    <hr class="style-eight mb-5">
+    <div class="container">
+        <div class="card my-3 shadow p-3 rounded">
+            <div class="row">
+                <div class="col-lg-3 col-md-12">
+                    <img src="{% static 'main_app/img/nantes.jpg'%}" class="w-100 imgMenu rounded">
+                </div>
+
+                <div class="col-lg-9 col-md-12 px-3">
+                    <div class="card-block px-3 textBlock">
+                        <h4 class="card-title text-center mt-2">Nantes WIKI</h4>
+                        <p class="card-text text-justify mt-5 my-4 mx-3 p-2 ">Nantes est une commune de l'ouest de la
+                            France, située au sud du Massif armoricain, qui s'étend sur les rives de la Loire, à 50 km
+                            de l'océan Atlantique. Chef-lieu du département de la Loire-Atlantique, et préfecture de la
+                            région Pays de la Loire, elle est, en 2017, la sixième commune la plus peuplée de France
+                            avec ses 309 346 habitants, et la première de l'Ouest en nombre d'habitants. Nantes est
+                            également l'élément central de Nantes Métropole, peuplée de 619 240 habitants en 2014, au
+                            sein de la sixième unité urbaine (622 693 habitants) et de la huitième aire urbaine de
+                            France, comptant 934 165 habitants au 1er janvier 2014 (+ 7,15 % depuis 2009).</p>
+                        <p class="card-text text-justify mt-4 my-4 mx-3 p-2 ">Au regard de la superficie, Nantes
+                            Métropole reste la deuxième agglomération des Pays de la
+                            Loire avec 523,4 km21, derrière Angers Loire Métropole qui comptabilise 666,72 km2..</p>
+                        </p>
+
+                    </div>
+                </div>
+                <div class="row">
+
+                    <div class="col-lg-3 col-md-4 px-1">
+                        <div class="card-block px-3 textBlock">
+                            <p class="card-text text-center p-2 ">
+                                <img src="{% static 'main_app/img/nantes_chateau2.jpg'%}">
+                                Chateau des Ducs de Bretagne</p>
+
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 px-1">
+                        <div class="card-block px-3 textBlock">
+                            <p class="card-text text-center p-2 ">
+                                <img src="{% static 'main_app/img/nantes_beaulieu.jpg'%}">
+                                L'ile Beaulieu</p>
+
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 px-1">
+                        <div class="card-block px-3 textBlock">
+                            <p class="card-text text-justify p-2 ">
+                                <img src="{% static 'main_app/img/nantes.jpg'%}" class="w-100 imgMenu rounded"></p>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

@@ -1,0 +1,115 @@
+{% extends 'main_app/base.html' %}
+{% load static %}
+
+{% block content %}
+<section>
+    <h2 class="text-center p-3 txt">Mes villes</h2>
+
+    <div class="container">
+        <div class="card my-12 shadow p-3 rounded">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="{% static 'main_app/img/nantes.jpg'%}" class="w-100 imgMenu rounded">
+                    <div class="mb-5 d-flex justify-content-center">
+                        <a href='{% url "main_app:nantes" %}' class="btn btn-primary mx-auto">
+                            Nantes
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <img src="{% static 'main_app/img/nice.jpg'%}" class="w-100 imgMenu rounded">
+                    <div class="mb-5 d-flex justify-content-center">
+                        <a href='{% url "main_app:marseille_cassis" %}' class="btn btn-primary mx-auto">
+                            Marseille-Cassis
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <img src="{% static 'main_app/img/nice.jpg'%}" class="w-100 imgMenu rounded">
+                    <div class="mb-5 d-flex justify-content-center">
+                        <a href='{% url "main_app:nice" %}' class="btn btn-primary mx-auto">
+                            Nice
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <img src="{% static 'main_app/img/lehavre.jpg'%}" class="w-100 imgMenu rounded">
+                    <div class="mb-5 d-flex justify-content-center">
+                        <a href='{% url "main_app:lehavre" %}' class="btn btn-primary mx-auto">
+                            Le Havre
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <img src="{% static 'main_app/img/vannes.jpg'%}" class="w-100 imgMenu rounded">
+                    <div class="mb-5 d-flex justify-content-center">
+                        <a href='{% url "main_app:vannes" %}' class="btn btn-primary mx-auto">
+                            Vannes
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <img src="{% static 'main_app/img/brest.jpg'%}" class="w-100 imgMenu rounded">
+                    <div class="mb-5 d-flex justify-content-center">
+                        <a href='{% url "main_app:brest" %}' class="btn btn-primary mx-auto">
+                            Brest
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <img src="{% static 'main_app/img/orleans.jpg'%}" class="w-100 imgMenu rounded">
+                    <div class="mb-5 d-flex justify-content-center">
+                        <a href='{% url "main_app:orleans" %}' class="btn btn-primary mx-auto">
+                            Orléans
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</section>
+<!-- <section>
+    <h2 class="text-center p-3 txt mb-5">Mes villes</h2>
+
+    <div class="container">
+        <div class="card my-3 shadow p-3 rounded mb-5">
+            <div class="row justify-content-center">
+                {% for partenaire in partenaires %}
+
+                <div class="col-md-4 ">
+
+                    <div class="card mb-2 ">
+
+                        <img class="card-img-top w-100 imgMenu rounded" src="{{ partenaire.picture.url }}">
+
+                        <div class="card-body" id="titlePartner">
+
+                            <p class="text-center card-title ">{{ partenaire.name }}</p>
+                        </div>
+
+                    </div>
+                    <div class="mb-5 d-flex justify-content-center">
+                        <a href="{{partenaire.link }}" class="btn btn-primary mx-auto">
+                            visitez notre site
+                        </a>
+                    </div>
+
+                </div>
+
+                {% endfor %}
+
+            </div>
+</section> -->
+
+
+{% endblock content %}

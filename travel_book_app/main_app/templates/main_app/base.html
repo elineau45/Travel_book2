@@ -1,0 +1,105 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'main_app/css/style.css' %}" />
+
+    <script src="https://use.fontawesome.com/3d4ae29890.js"></script>
+
+    <title>Travel Book</title>
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row align-items-center skeleton justify-content-center">
+            <div class="col-6 col-md-4 col-lg-3">
+                <h1> Travel Book</h1>
+            </div>
+            <nav class="col-12 col-md-12 col-lg-9 navbar navbar-dark navbar-expand-md">
+                <div class="navbar-brand"></div>
+                <button class="navbar-toggler text-decoration-none" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav nav ml-auto">
+                        <li class="nav-item btn">
+                            <a class="nav-link" href='{% url "main_app:index" %}'>Mes derniers voyages</a>
+                        </li>
+                        <li class="nav-item btn">
+                            <a class="nav-link" href='{% url "main_app:old_travels" %}'>Mes anciens voyages</a>
+                        </li>
+
+                        <li class="nav-item btn">
+                            <a class="nav-link" href="{% url 'main_app:villes' %}">Villes</a>
+                        </li>
+
+                        <li class="nav-item btn">
+                            <a class="nav-link" href="{% url 'main_app:propos' %}">Qui suis-je?</a>
+                        </li>
+
+                        <li class="nav-item btn">
+                            <a class="nav-link" href="/admin">Admin</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </nav>
+        </div>
+    </div>
+
+
+    {% block content %}{% endblock %}
+
+
+    <footer>
+        <div class="row text-center text-light m-0">
+            <div class="col-md-3 align-self-center mb-4">
+                <p class="mt-3 text-white-50 mb-2">Contact</p>
+                <a href="https://www.linkedin.com/in/sylvain-elineau/" class="fab fa-linkedin-in fa-2x p-2 text-light"
+                    aria-hidden="true" id="logoface"></a>
+                <a href="mailto:elineau.sylvain@gmail.com"
+                    class="fa fa-envelope fa-2x p-2 text-light text-decoration-none" aria-hidden="true"></a>
+            </div>
+            <div class="col-md-6 align-self-center text-white-50">
+                <i class="fa fa-copyright"> Copyright WildCodeSchool 2020</i>
+            </div>
+            <div class="col-md-1 align-self-center m-0 text-white-50">
+                {% if user.administrateur %}
+                <a class="m-0 text-reset text-decoration-none" href='/admin'>Admin</a>
+                {% endif %}
+            </div>
+
+            <div class="col-md-1 align-self-center ml-1">
+                <a class="top" href="#">Retour haut de page</a>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="{% static 'main_app/js/script.js' %}"></script>
+</body>
+
+</html>
